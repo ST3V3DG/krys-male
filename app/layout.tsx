@@ -3,21 +3,16 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Krysmale | Portfolio",
-  description: "I am an illustrator and I design book covers for my clients to highlight the emotion conveyed by the book.",
+  description:
+    "I am an illustrator and I design book covers for my clients to highlight the emotion conveyed by the book.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html className="scroll-smooth" lang="en">
-      <body
-        className="antialiased"
-      >
-        {children}
-      </body>
+    <html className="scroll-smooth" lang="en" suppressHydrationWarning>
+      <body className="antialiased overflow-x-hidden *:bg-background">{children}</body>
     </html>
   );
 }
