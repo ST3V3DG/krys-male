@@ -1,8 +1,7 @@
 "use client";
 
 import { Check, X as XIcon } from "lucide-react";
-
-import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Badge } from "@/components/ui/badge";
@@ -15,13 +14,14 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { cn } from "@/lib/utils";
 
-interface ProductSpec {
+type ProductSpec = {
   name: string;
   values: (string | boolean)[];
-}
+};
 
-interface Product {
+type Product = {
   id: string;
   name: string;
   image: string;
@@ -29,60 +29,66 @@ interface Product {
   originalPrice?: number;
   rating: number;
   badge?: string;
-}
+};
 
-interface CompareProducts1Props {
-  products?: Product[];
-  specs?: ProductSpec[];
-  className?: string;
-}
-
-const DEFAULT_PRODUCTS: Product[] = [
+const products: Product[] = [
   {
     id: "1",
-    name: "Wireless Pro Headphones",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/ecommerce/electronics/Modern-White-Headphones-1.png",
-    price: 299.99,
-    rating: 4.8,
+    name: "Basic Tier",
+    image:
+      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/ecommerce/electronics/Modern-White-Headphones-1.png",
+    price: 85,
+    rating: 4.2,
   },
   {
     id: "2",
-    name: "Studio Monitor Plus",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/ecommerce/electronics/Sleek-Black-Headphones-1.jpeg",
-    price: 249.99,
-    originalPrice: 279.99,
-    rating: 4.5,
+    name: "Premium Tier",
+    image:
+      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/ecommerce/electronics/Sleek-Black-Headphones-1.jpeg",
+    price: 600,
+    originalPrice: 750,
+    rating: 4.9,
+    badge: "Best Value",
   },
   {
     id: "3",
-    name: "Essential Audio",
-    image: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/ecommerce/electronics/Modern-Headphones-1.jpeg",
-    price: 149.99,
-    rating: 4.2,
+    name: "Luxury Tier",
+    image:
+      "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/ecommerce/electronics/Modern-Headphones-1.jpeg",
+    price: 800,
+    rating: 5.0,
   },
 ];
 
-const DEFAULT_SPECS: ProductSpec[] = [
-  { name: "Driver Size", values: ["40mm", "50mm", "40mm"] },
+const specsGroups: { title: string; specs: ProductSpec[] }[] = [
   {
-    name: "Frequency Response",
-    values: ["20Hz-20kHz", "10Hz-40kHz", "20Hz-20kHz"],
+    title: "PRICING TIERS ( for indies Authors )",
+    specs: [
+      {
+        name: "Illustration Type",
+        values: [
+          "Single character",
+          "Complex illustrations",
+          "Complex illustrations",
+        ],
+      },
+      { name: "Characters Included", values: ["1", "3+", "3+"] },
+      { name: "Background", values: ["Simple", "Detailed", "Detailed"] },
+      { name: "Moodboards", values: [false, true, true] },
+      { name: "Moodboards Count", values: ["0", "3", "4"] },
+      { name: "Revisions", values: ["2", "5", "Unlimited"] },
+      {
+        name: "Files Included",
+        values: ["Digital only", "Full print files", "Full print + sources"],
+      },
+      { name: "Social Media Mockups", values: [false, true, true] },
+      { name: "Commercial Rights", values: [false, false, true] },
+      { name: "Priority Turnaround", values: [false, true, true] },
+    ],
   },
-  { name: "Active Noise Cancellation", values: [true, true, false] },
-  { name: "Battery Life", values: ["30 hours", "24 hours", "20 hours"] },
-  { name: "Wireless", values: [true, true, true] },
-  { name: "Bluetooth Version", values: ["5.3", "5.2", "5.0"] },
-  { name: "Foldable Design", values: [true, false, true] },
-  { name: "Weight", values: ["250g", "280g", "220g"] },
-  { name: "Included Case", values: [true, true, false] },
-  { name: "Warranty", values: ["2 years", "2 years", "1 year"] },
 ];
 
-const CompareProducts1 = ({
-  products = DEFAULT_PRODUCTS,
-  specs = DEFAULT_SPECS,
-  className,
-}: CompareProducts1Props) => {
+export function ComparePricesSection() {
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("en-US", {
       style: "currency",
@@ -102,12 +108,10 @@ const CompareProducts1 = ({
   };
 
   return (
-    <section className={cn("py-16 md:py-24", className)}>
-      <div className="container">
+    <section className="py-32">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="mb-8 text-center">
-          <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
-            Compare Products
-          </h2>
+          <h2 className="text-5xl font-bold text-primary">Compare Products</h2>
           <p className="mt-2 text-muted-foreground">
             See how our products stack up against each other
           </p>
@@ -122,16 +126,18 @@ const CompareProducts1 = ({
                   <TableHead
                     key={product.id}
                     className={cn(
-                      "min-w-[200px] text-center",
+                      "min-w-50 text-center",
                       index < products.length - 1 && "border-r",
                     )}
                   >
                     <div className="pb-4">
                       <div className="mx-auto size-48 overflow-hidden rounded-lg bg-muted">
                         <AspectRatio ratio={1}>
-                          <img
+                          <Image
                             src={product.image}
                             alt={product.name}
+                            width={500}
+                            height={500}
                             className="size-full object-cover"
                           />
                         </AspectRatio>
@@ -144,7 +150,7 @@ const CompareProducts1 = ({
                       <h3 className="mt-2 text-lg leading-tight font-semibold">
                         {product.name}
                       </h3>
-                      <div className="flex min-h-[1.5rem] items-center justify-center gap-2">
+                      <div className="flex min-h-6 items-center justify-center gap-2">
                         <span className="text-lg">
                           {formatPrice(product.price)}
                         </span>
@@ -158,7 +164,7 @@ const CompareProducts1 = ({
                         <span className="text-amber-500">★</span>
                         <span className="text-sm">{product.rating}</span>
                       </div>
-                      <Button className="mt-4 w-full" size="sm">
+                      <Button className="mt-4 w-full rounded-full" size="sm">
                         Add to Cart
                       </Button>
                     </div>
@@ -167,25 +173,35 @@ const CompareProducts1 = ({
               </TableRow>
             </TableHeader>
             <TableBody>
-              {specs.map((spec, index) => (
-                <TableRow key={index}>
-                  <TableCell className="border-r font-medium">
-                    {spec.name}
-                  </TableCell>
-                  {spec.values.map((value, vIndex) => (
-                    <TableCell
-                      key={vIndex}
-                      className={cn(
-                        "text-center",
-                        vIndex < spec.values.length - 1 && "border-r",
-                      )}
-                    >
-                      <div className="flex items-center justify-center">
-                        {renderValue(value)}
-                      </div>
+              {specsGroups.map((specGroup, index) => (
+                <>
+                  <TableRow key={index}>
+                    <TableCell aria-hidden={true}></TableCell>
+                    <TableCell className="text-center font-bold" colSpan={3}>
+                      {specGroup.title}
                     </TableCell>
+                  </TableRow>
+                  {specGroup.specs.map((spec, idx) => (
+                    <TableRow key={idx}>
+                      <TableCell className="border-r font-medium">
+                        {spec.name}
+                      </TableCell>
+                      {spec.values.map((value, vIndex) => (
+                        <TableCell
+                          key={vIndex}
+                          className={cn(
+                            "text-center",
+                            vIndex < spec.values.length - 1 && "border-r",
+                          )}
+                        >
+                          <div className="flex items-center justify-center">
+                            {renderValue(value)}
+                          </div>
+                        </TableCell>
+                      ))}
+                    </TableRow>
                   ))}
-                </TableRow>
+                </>
               ))}
             </TableBody>
           </Table>
@@ -193,6 +209,4 @@ const CompareProducts1 = ({
       </div>
     </section>
   );
-};
-
-export { CompareProducts1 };
+}

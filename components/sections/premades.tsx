@@ -9,7 +9,7 @@ export function PremadesSection() {
     <section className="py-32 flex items-center justify-center">
       <div className="max-w-6xl mx-auto px-6 flex flex-col gap-16">
         <div className="lg:max-w-sm">
-          <h2 className="mb-3 font-bold md:mb-4 text-5xl lg:mb-6 bg-linear-to-br from-primary from-0 to-secondary to-50 text-transparent bg-clip-text">
+          <h2 className="mb-3 font-bold md:mb-4 text-5xl lg:mb-6 text-primary">
             {heading}
           </h2>
           <p className="mb-8 lg:text-lg text-muted-foreground">{description}</p>
