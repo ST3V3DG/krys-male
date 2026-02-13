@@ -16,6 +16,8 @@ import {
 } from "@/components/ui/table";
 import { cn } from "@/lib/utils";
 
+export type SpecsGroupsType = { title: string; specs: ProductSpec[] }[];
+
 type ProductSpec = {
   name: string;
   values: (string | boolean)[];
@@ -60,35 +62,7 @@ const products: Product[] = [
   },
 ];
 
-const specsGroups: { title: string; specs: ProductSpec[] }[] = [
-  {
-    title: "PRICING TIERS ( for indies Authors )",
-    specs: [
-      {
-        name: "Illustration Type",
-        values: [
-          "Single character",
-          "Complex illustrations",
-          "Complex illustrations",
-        ],
-      },
-      { name: "Characters Included", values: ["1", "3+", "3+"] },
-      { name: "Background", values: ["Simple", "Detailed", "Detailed"] },
-      { name: "Moodboards", values: [false, true, true] },
-      { name: "Moodboards Count", values: ["0", "3", "4"] },
-      { name: "Revisions", values: ["2", "5", "Unlimited"] },
-      {
-        name: "Files Included",
-        values: ["Digital only", "Full print files", "Full print + sources"],
-      },
-      { name: "Social Media Mockups", values: [false, true, true] },
-      { name: "Commercial Rights", values: [false, false, true] },
-      { name: "Priority Turnaround", values: [false, true, true] },
-    ],
-  },
-];
-
-export function ComparePricesSection() {
+export function ComparePricesSection({ className, specsGroups }: { className?: string, specsGroups: { title: string; specs: ProductSpec[] }[]}) {
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat("en-US", {
       style: "currency",
@@ -108,7 +82,7 @@ export function ComparePricesSection() {
   };
 
   return (
-    <section className="py-32">
+    <section className={cn("py-32", className)}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-8 text-center">
           <h2 className="text-5xl font-bold text-primary">Compare Products</h2>
@@ -144,7 +118,7 @@ export function ComparePricesSection() {
                       </div>
                       <div className="-mt-3 flex h-6 items-center justify-center">
                         {product.badge && (
-                          <Badge className="mx-auto">{product.badge}</Badge>
+                          <Badge className="mx-auto z-1">{product.badge}</Badge>
                         )}
                       </div>
                       <h3 className="mt-2 text-lg leading-tight font-semibold">
