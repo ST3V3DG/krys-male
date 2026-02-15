@@ -189,7 +189,7 @@ export default function Footer() {
           <p className="text-muted-foreground mb-4 text-sm md:mb-0">
             &copy; {new Date().getFullYear()} Krysmale. All rights reserved.
           </p>
-          <Button className="group inline-flex items-center text-sm font-medium cursor-pointer text-white rounded-full">
+          <Button className="group inline-flex items-center text-sm font-medium cursor-pointer text-white rounded-full bg-primary">
             Back to top
             <ArrowUp className="ml-1 transition duration-300 group-hover:-translate-y-1" />
           </Button>

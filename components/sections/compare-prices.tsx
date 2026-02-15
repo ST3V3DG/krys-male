@@ -85,7 +85,7 @@ export function ComparePricesSection({ className, specsGroups }: { className?: s
     <section className={cn("py-32", className)}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-8 text-center">
-          <h2 className="text-5xl font-bold text-primary">Compare Products</h2>
+          <h1 className="text-5xl font-bold text-primary">Compare Products</h1>
           <p className="mt-2 text-muted-foreground">
             See how our products stack up against each other
           </p>

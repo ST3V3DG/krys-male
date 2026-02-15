@@ -15,7 +15,7 @@ export function ContactButton({
         className,
       )}
     >
-      <Link className="flex items-center w-full justify-center p-2" href="#">
+      <Link className="flex items-center w-full justify-center p-2" href="/contact">
         <span arial-hidden="true" className="rounded-full size-8"></span>
         <span
           arial-hidden="true"

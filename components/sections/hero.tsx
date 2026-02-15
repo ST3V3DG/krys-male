@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section className="py-6 h-svh">
       <div className="mx-auto max-w-6xl px-6 grid grid-cols-1 grid-rows-12 gap-4 lg:grid-cols-7 lg:grid-rows-1 h-full relative">
-        <div className="absolute animate-floating delay-200 top-12 right-[6vw] rotate-4 h-36 aspect-2/3">
+        <div className="absolute -z-1 animate-floating delay-200 top-12 right-[6vw] rotate-4 h-36 aspect-2/3">
           <Tilt isRevese>
             <div>
               <Image
@@ -19,7 +19,7 @@ export function HeroSection() {
             </div>
           </Tilt>
         </div>
-        <div className="absolute animate-floating delay-700 top-60 right-[12vw] -rotate-4 h-44 aspect-2/3">
+        <div className="absolute -z-1 animate-floating delay-700 top-60 right-[12vw] -rotate-4 h-44 aspect-2/3">
           <Tilt isRevese>
             <div>
               <Image
@@ -32,7 +32,7 @@ export function HeroSection() {
             </div>
           </Tilt>
         </div>
-        <div className="absolute animate-floating delay-[1.5s] bottom-20 left-[8vw] -rotate-4 h-48 aspect-2/3">
+        <div className="absolute -z-1 animate-floating delay-[1.5s] bottom-20 left-[8vw] -rotate-4 h-48 aspect-2/3">
           <Tilt isRevese>
             <div>
               <Image
@@ -92,7 +92,7 @@ export function HeroSection() {
           </svg>
         </div>
         <div className="lg:col-span-2 max-lg:row-span-2 flex flex-col lg:justify-end">
-          <div className="flex flex-col gap-2 max-lg:px-2 max-lg:bg-black/10 backdrop-blur-xl">
+          <div className="flex flex-col gap-2 max-lg:px-2 text-primary bg-background">
             <p className="text-xl font-medium text-foreground">
               Make your readers feel like they are part of your story.
             </p>
