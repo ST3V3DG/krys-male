@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function AboutSection() {
   return (
-    <section className="bg-secondary/20 overflow-hidden lg:h-svh">
+    <section className="bg-secondary/20 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 justify-content-center gap-4">
         <div className="flex flex-col py-24 gap-8">
           <h2 className="text-5xl text-primary">About Me</h2>
