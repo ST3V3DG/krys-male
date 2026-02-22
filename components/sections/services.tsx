@@ -172,7 +172,7 @@ function ServicePresenter({ service }: { service: Service }) {
         {service.title}
       </h2>
       <div className="flex flex-col lg:flex-row gap-12 items-start">
-        <Card className="relative aspect-square overflow-hidden p-0 image-block min-w-lg">
+        <Card className="relative aspect-square overflow-hidden p-0 image-block w-full max-w-lg">
           <Image
             src={service.image}
             alt={service.title}
