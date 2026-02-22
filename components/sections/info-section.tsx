@@ -10,7 +10,7 @@ export function InfoSection({
   className?: string;
 }) {
   return (
-    <section className={cn("py-32 bg-secondary/20", className)}>
+    <section className={cn("py-32 bg-secondary/10", className)}>
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-10 text-primary">
           {title}

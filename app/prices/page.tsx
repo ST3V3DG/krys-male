@@ -119,7 +119,7 @@ export default function Prices() {
         <Header />
         <main>
           <ComparePricesSection specsGroups={pricingTiersSpecsGroups} />
-          <ComparePricesSection className="bg-secondary/20" specsGroups={servicesPackagesSpecsGroups} />
+          <ComparePricesSection className="bg-secondary/10" specsGroups={servicesPackagesSpecsGroups} />
           <AddOnServicesTableSection />
           <InfoSection title="PACKAGE INCLUSIONS (ALL TIERS)" items={packageInclusions} />
           <InfoSection className="pt-0" title="IMPORTANT NOTES" items={importantNotes} />

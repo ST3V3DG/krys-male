@@ -12,7 +12,7 @@ export function PremadesSection() {
           <h1 className="mb-3 font-bold md:mb-4 text-4xl lg:mb-6 text-primary sm:text-5xl md:text-7xl">
             {heading}
           </h1>
-          <p className="mb-8 lg:text-lg text-muted-foreground">{description}</p>
+          <p className="mb-8 lg:text-lg text-muted-foreground text-pretty">{description}</p>
         </div>
           <PremadesTabs />
       </div>

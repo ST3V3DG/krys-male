@@ -61,7 +61,7 @@
     --radius-2xl: calc(var(--radius) + 8px);
     --radius-3xl: calc(var(--radius) + 12px);
     --radius-4xl: calc(var(--radius) + 16px);
-    
+
     @keyframes floating {
       0% {
         transform: translateY(-4px);
@@ -166,13 +166,23 @@
     anchor-name: --contact-wrapper-edge-element;
 }
 
-.contact-button-wrapper:hover > a > span:nth-child(3) {
+.contact-button-wrapper:hover {
+    & > a > span:nth-child(3) {
+        anchor-name: none;
+    }
+
+    & > a > span:nth-child(1) {
+        anchor-name: --contact-wrapper-edge-element;
+    }
+}
+
+/*.contact-button-wrapper:hover > a > span:nth-child(3) {
     anchor-name: none;
 }
 
 .contact-button-wrapper:hover > a > span:nth-child(1) {
     anchor-name: --contact-wrapper-edge-element;
-}
+}*/
 
 .contact-button-wrapper > a > span:nth-child(4) {
     position-anchor: --contact-wrapper-edge-element;

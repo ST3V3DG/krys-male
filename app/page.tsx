@@ -17,12 +17,12 @@ export default function Home() {
   return (
     <>
       <ReactLenis root ref={lenisRef} />
-      <div className="relative z-1 w-full">
+      <div className="relative z-1 w-full shadow-2xl">
       <Header />
       <main>
         <HeroSection />
         <AboutSection />
-        <ProjectsSection />
+        {/*<ProjectsSection />*/}
         <ProcessSection />
         <TestimonialsSection />
         <CTASection />

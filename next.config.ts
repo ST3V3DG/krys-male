@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "deifkwefumgah.cloudfront.net",
-        pathname: "/shadcnblocks/block/ecommerce/electronics/**"
+        pathname: "/shadcnblocks/block/**"
       }
     ],
   },
