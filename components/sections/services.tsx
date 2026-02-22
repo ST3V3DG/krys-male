@@ -133,11 +133,11 @@ export function ServiceDetailsSection() {
   gsap.registerPlugin(ScrollTrigger, SplitText, useGSAP);
   const serviceSectionRef = useRef(null);
   const q = gsap.utils.selector(serviceSectionRef);
-  let matchMedia = gsap.matchMedia();
+  const matchMedia = gsap.matchMedia();
 
   useGSAP(
     () => {
-      matchMedia.add("(width < 48rem)", () => {
+      matchMedia.add("(width >= 64rem)", () => {
         q(".description-block").forEach((element, index) => {
           ScrollTrigger.create({
             trigger: element,
