@@ -97,32 +97,32 @@ export function ServicesSection() {
             </motion.a>
           ))}
 
-        <div className="col-span-full grid grid-cols-1 gap-4 sm:grid-cols-3">
-          {services.slice(2).map((service, index) => (
-            <motion.a
-              key={index}
-              href={`#${service.title}`}
-              whileHover={{ opacity: 0.8 }}
-              className="group block overflow-hidden rounded-xl"
-            >
-              <Card className="relative aspect-4/3 overflow-hidden p-0">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  height={600}
-                  width={600}
-                  className="absolute inset-0 size-full object-cover"
-                />
-                <CardContent className="absolute inset-0 flex flex-col justify-start p-6">
-                  <div className="pr-4 font-semibold text-white">
-                    {service.title}
-                  </div>
-                </CardContent>
-                <ArrowUpRight className="absolute top-6 right-6 size-6 text-white transition-transform group-hover:scale-110" />
-              </Card>
-            </motion.a>
-          ))}
-        </div>
+          <div className="col-span-full grid grid-cols-1 gap-4 sm:grid-cols-3">
+            {services.slice(2).map((service, index) => (
+              <motion.a
+                key={index}
+                href={`#${service.title}`}
+                whileHover={{ opacity: 0.8 }}
+                className="group block overflow-hidden rounded-xl"
+              >
+                <Card className="relative aspect-4/3 overflow-hidden p-0">
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    height={600}
+                    width={600}
+                    className="absolute inset-0 size-full object-cover"
+                  />
+                  <CardContent className="absolute inset-0 flex flex-col justify-start p-6">
+                    <div className="pr-4 font-semibold text-white">
+                      {service.title}
+                    </div>
+                  </CardContent>
+                  <ArrowUpRight className="absolute top-6 right-6 size-6 text-white transition-transform group-hover:scale-110" />
+                </Card>
+              </motion.a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -133,17 +133,20 @@ export function ServiceDetailsSection() {
   gsap.registerPlugin(ScrollTrigger, SplitText, useGSAP);
   const serviceSectionRef = useRef(null);
   const q = gsap.utils.selector(serviceSectionRef);
+  let matchMedia = gsap.matchMedia();
 
   useGSAP(
     () => {
-      q(".description-block").forEach((element, index) => {
-        ScrollTrigger.create({
-          trigger: element,
-          endTrigger: q(".image-block")[index],
-          pin: true,
-          scrub: 1,
-          start: "center center",
-          end: "bottom 80%",
+      matchMedia.add("(width < 48rem)", () => {
+        q(".description-block").forEach((element, index) => {
+          ScrollTrigger.create({
+            trigger: element,
+            endTrigger: q(".image-block")[index],
+            pin: true,
+            scrub: 1,
+            start: "center center",
+            end: "bottom 80%",
+          });
         });
       });
     },
@@ -155,7 +158,11 @@ export function ServiceDetailsSection() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col items-center justify-center">
         {services.map((service) => {
           return (
-            <div id={service.title} key={service.title} className="w-full h-min">
+            <div
+              id={service.title}
+              key={service.title}
+              className="w-full h-min"
+            >
               <ServicePresenter service={service} />
             </div>
           );
