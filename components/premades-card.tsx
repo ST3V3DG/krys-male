@@ -60,7 +60,7 @@ export default function Card({
     <Tilt className={cn("mb-4", className)} rotationFactor={8} isRevese>
       <div
         ref={cardRef}
-        className="relative grid w-full grid-rows-2 overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900 rounded-md"
+        className="relative grid w-full grid-rows-2 overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900 rounded-lg"
       >
         <Image
           src={imageSrc}

@@ -58,7 +58,7 @@ export const testimonials: TestimonialItem[] = [
 
 export function TestimonialsSection() {
   return (
-    <section className="bg-secondary/20 py-8 sm:py-16 lg:py-24">
+    <section className="bg-secondary/10 py-8 sm:py-16 lg:py-24">
       <Carousel
         className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-11 px-4 sm:px-6 md:grid-cols-2 lg:px-8"
         opts={{
@@ -101,7 +101,7 @@ export function TestimonialsSection() {
                 <div className="flex flex-col gap-10">
                   <div className="space-y-2">
                     <p className="h-14 text-9xl text-primary">&ldquo;</p>
-                    <p className="text-muted-foreground text-xl font-medium sm:text-2xl lg:text-3xl">
+                    <p className="text-foreground text-xl font-medium sm:text-2xl lg:text-3xl">
                       {testimonial.content}
                     </p>
                   </div>
@@ -111,7 +111,7 @@ export function TestimonialsSection() {
                         src={testimonial.avatar}
                         alt={testimonial.name}
                       />
-                      <AvatarFallback className="rounded-full text-sm">
+                      <AvatarFallback className="rounded-full text-sm text-primary">
                         {testimonial.name
                           .split(" ", 2)
                           .map((n) => n[0])

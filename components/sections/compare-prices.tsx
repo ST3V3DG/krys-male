@@ -138,7 +138,7 @@ export function ComparePricesSection({ className, specsGroups }: { className?: s
                         <span className="text-amber-500">★</span>
                         <span className="text-sm">{product.rating}</span>
                       </div>
-                      <Button className="mt-4 w-full rounded-full" size="sm">
+                      <Button className="mt-4 w-full rounded-full bg-primary" size="sm">
                         Add to Cart
                       </Button>
                     </div>

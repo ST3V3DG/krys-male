@@ -19,20 +19,20 @@ export function CTASection() {
       <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <Card className="shadow-none bg-background">
           <CardContent>
-            <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 place-content-center">
               {/* Left Column - Image */}
-              <div className="relative h-64 sm:h-80 lg:h-auto">
+              <div className="relative overflow-hidden">
                 <Image
                   src="/images/gregoire.png"
                   alt="Workspace with laptop"
-                  className="size-full rounded-lg object-cover scale-120"
+                  className="h-full rounded-lg object-cover lg:scale-120 mx-auto"
                   width={500}
                   height={500}
                 />
               </div>
 
               {/* Right Column - Content */}
-              <Card className="bg-secondary/20 rounded-lg border-0 shadow-none">
+              <Card className="bg-secondary/10 rounded-lg border-0 shadow-none">
                 <CardContent className="flex h-full flex-col justify-between gap-4">
                   <h2 className="text-xl leading-tight font-semibold text-primary lg:text-2xl">
                     Explore insights, stories, and strategies that help you
@@ -46,8 +46,8 @@ export function CTASection() {
                     </p>
                     {/* Email Form */}
                     <form className='gap-3 py-1 max-sm:space-y-2 sm:flex sm:flex-row'>
-                        <Input type='email' placeholder='Your email' className='bg-background h-10 flex-1 text-base' />
-                        <Button size='lg' className='rounded-lg text-base max-sm:w-full' type='submit'>
+                        <Input type='email' placeholder='Your email' className='bg-background h-11 flex-1 text-base flex items-center' />
+                        <Button size='lg' className='rounded-lg bg-primary text-base max-sm:w-full' type='submit'>
                           Subscribe
                         </Button>
                       </form>
