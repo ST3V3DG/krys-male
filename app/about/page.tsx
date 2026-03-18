@@ -1,12 +1,12 @@
 "use client";
 
+import { type LenisRef, ReactLenis } from "lenis/react";
 import { useRef } from "react";
 import Footer from "@/components/footer";
+import { GlassmorphismPortfolioBlock } from "@/components/glassmorhism-porfolio";
 import Header from "@/components/header";
-import { ReactLenis, type LenisRef } from "lenis/react";
-import { ServiceDetailsSection, ServicesSection } from "@/components/sections/services";
 
-export default function Services() {
+export default function ChildrenHome() {
   const lenisRef = useRef<LenisRef>(null);
   return (
     <>
@@ -14,8 +14,7 @@ export default function Services() {
       <div className="relative z-1 w-full shadow">
         <Header />
         <main>
-          <ServicesSection />
-          <ServiceDetailsSection />
+          <GlassmorphismPortfolioBlock />
         </main>
       </div>
       <Footer />

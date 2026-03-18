@@ -35,7 +35,7 @@ export default function Articles() {
             <div className=" max-w-6xl mx-auto px-6">
                 <div className="mb-12 flex items-end justify-between">
                     <div>
-                        <h2 className="mb-2 font-gambarino text-3xl font-medium">Latest Articles</h2>
+                        <h2 className="mb-2 font-gambarino text-3xl font-medium text-primary">Latest Articles</h2>
                         <p className="text-muted-foreground max-w-xl">Insights and stories that capture the essence of contemporary culture.</p>
                     </div>
                     <Link href="#" className="group hidden items-center text-sm font-medium tracking-wider uppercase md:inline-flex">

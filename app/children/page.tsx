@@ -15,7 +15,7 @@ export default function ChildrenHome() {
   return (
     <>
       <ReactLenis root ref={lenisRef} />
-      <div className="relative z-1 w-full">
+      <div className="relative z-1 w-full shadow">
         <Header />
         <main>
           <HeroSection />

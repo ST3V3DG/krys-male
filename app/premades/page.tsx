@@ -11,7 +11,7 @@ export default function Premades() {
   return (
     <>
       <ReactLenis root ref={lenisRef} />
-      <div className="relative z-1 w-full">
+      <div className="relative z-1 w-full shadow">
       <Header />
       <main>
         <PremadesSection />

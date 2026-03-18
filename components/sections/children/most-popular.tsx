@@ -54,7 +54,7 @@ export default function MostPopular() {
             <div className=" max-w-6xl mx-auto px-6">
                 <div className="mb-8 flex flex-col items-start justify-between md:flex-row md:items-end">
                     <div>
-                        <h2 className="mb-2 font-gambarino text-3xl font-medium">Editor's Picks</h2>
+                        <h2 className="mb-2 font-gambarino text-3xl font-medium text-primary">Editor's Picks</h2>
                         <p className="text-muted-foreground max-w-xl">Carefully selected stories that showcase exceptional creativity and insight.</p>
                     </div>
                     <div className="mt-4 flex space-x-2 md:mt-0">

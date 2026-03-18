@@ -7,7 +7,7 @@ export default function NewsLetter() {
             <div className=" max-w-6xl mx-auto px-6 text-center">
                 <div className="mx-auto max-w-2xl">
                     <span className="mb-3 inline-block text-xs tracking-widest uppercase opacity-80"> Stay Updated </span>
-                    <h2 className="mb-6 text-3xl font-medium md:text-4xl font-gambarino">Subscribe to Our Newsletter</h2>
+                    <h2 className="mb-6 text-3xl font-medium md:text-4xl font-gambarino text-primary">Subscribe to Our Newsletter</h2>
                     <p className="text-white/80 mx-auto mb-8 max-w-lg">Join our community of readers and receive the latest stories, interviews, and insights delivered directly to your inbox.</p>
 
                     <form className="mx-auto flex max-w-md flex-col items-center gap-3 sm:flex-row">

@@ -13,7 +13,7 @@ export function AboutSection() {
     <section className="py-16 md:py-32">
       <div className="mx-auto  max-w-6xl px-6">
         <div className="grid gap-6 md:grid-cols-2 md:gap-12">
-          <h2 className="text-4xl lg:text-5xl text-pretty font-medium">
+          <h2 className="text-4xl lg:text-5xl text-pretty font-medium text-primary">
             {title}
           </h2>
           <div className="space-y-6">

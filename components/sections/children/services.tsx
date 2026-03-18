@@ -58,7 +58,7 @@ export function ServicesSection() {
     <section className="py-32 bg-secondary/10">
       <div className=" max-w-6xl mx-auto px-6">
         <div className="mx-auto mb-16 max-w-3xl text-center">
-          <h2 className="text-4xl font-medium text-pretty lg:text-5xl">
+          <h2 className="text-4xl font-medium text-pretty lg:text-5xl text-primary">
             {title}
           </h2>
         </div>

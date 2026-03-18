@@ -6,7 +6,6 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { HeroSection } from "@/components/sections/hero";
 import { AboutSection } from "@/components/sections/about";
-import { ProjectsSection } from "@/components/sections/projects";
 import { ProcessSection } from "@/components/sections/process";
 import { FaqsSection } from "@/components/sections/faqs";
 import { TestimonialsSection } from "@/components/sections/testimonials";
@@ -17,7 +16,7 @@ export default function Home() {
   return (
     <>
       <ReactLenis root ref={lenisRef} />
-      <div className="relative z-1 w-full shadow-2xl">
+      <div className="relative z-1 w-full shadow">
       <Header />
       <main>
         <HeroSection />
