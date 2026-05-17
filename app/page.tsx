@@ -1,34 +1,34 @@
 "use client";
 
-import { ReactLenis, type LenisRef } from "lenis/react";
+import { type LenisRef, ReactLenis } from "lenis/react";
 import { useRef } from "react";
-import Header from "@/components/header";
 import Footer from "@/components/footer";
-import { HeroSection } from "@/components/sections/hero";
+import Header from "@/components/header";
 import { AboutSection } from "@/components/sections/about";
-import { ProcessSection } from "@/components/sections/process";
-import { FaqsSection } from "@/components/sections/faqs";
-import { TestimonialsSection } from "@/components/sections/testimonials";
 import { CTASection } from "@/components/sections/cta";
+import { FaqsSection } from "@/components/sections/faqs";
+import { HeroSection } from "@/components/sections/hero";
+import { ProcessSection } from "@/components/sections/process";
+import { TestimonialsSection } from "@/components/sections/testimonials";
 
 export default function Home() {
-  const lenisRef = useRef<LenisRef>(null);
-  return (
-    <>
-      <ReactLenis root ref={lenisRef} />
-      <div className="relative z-1 w-full shadow">
-      <Header />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        {/*<ProjectsSection />*/}
-        <ProcessSection />
-        <TestimonialsSection />
-        <CTASection />
-        <FaqsSection />
-      </main>
-      </div>
-      <Footer />
-    </>
-  );
+	const lenisRef = useRef<LenisRef>(null);
+	return (
+		<>
+			<ReactLenis root ref={lenisRef} />
+			<div className="relative z-1 w-full shadow">
+				<Header />
+				<main>
+					<HeroSection />
+					<AboutSection />
+					{/*<ProjectsSection />*/}
+					<ProcessSection />
+					<TestimonialsSection />
+					<CTASection />
+					<FaqsSection />
+				</main>
+			</div>
+			<Footer />
+		</>
+	);
 }
