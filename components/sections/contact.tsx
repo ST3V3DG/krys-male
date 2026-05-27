@@ -45,20 +45,28 @@ export function ContactSection() {
 						</div>
 					</div>
 
-					<Card variant="outline" className="@xl:col-span-3 p-6 rounded-md relative">
+					<Card variant="outline" className="@xl:col-span-3 p-6 rounded-md relative dark:bg-background">
 						<form action="" className="space-y-5">
 							<div className="@md:grid-cols-2 grid gap-4">
 								<div className="space-y-2">
 									<Label htmlFor="name" className="text-sm">
 										Name
 									</Label>
-									<Input type="text" id="name" name="name" placeholder="Your name" required />
+									<Input
+										className="dark:bg-secondary/20"
+										type="text"
+										id="name"
+										name="name"
+										placeholder="Your name"
+										required
+									/>
 								</div>
 								<div className="space-y-2">
 									<Label htmlFor="email" className="text-sm">
 										Email
 									</Label>
 									<Input
+										className="dark:bg-secondary/20"
 										type="email"
 										id="email"
 										name="email"
@@ -72,7 +80,13 @@ export function ContactSection() {
 								<Label htmlFor="subject" className="text-sm">
 									Subject
 								</Label>
-								<Input type="text" id="subject" name="subject" placeholder="How can we help?" />
+								<Input
+									className="dark:bg-secondary/20"
+									type="text"
+									id="subject"
+									name="subject"
+									placeholder="How can we help?"
+								/>
 							</div>
 
 							<div className="space-y-2">
@@ -85,7 +99,7 @@ export function ContactSection() {
 									rows={4}
 									placeholder="Tell us more..."
 									required
-									className="min-h-28"
+									className="min-h-28 dark:bg-secondary/20"
 								/>
 							</div>
 

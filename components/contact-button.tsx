@@ -15,7 +15,7 @@ export function ContactButton({
 	return (
 		<Button
 			className={cn(
-				"contact-button-wrapper bg-primary rounded-full text-white hover:text-primary hover:bg-background hover:ring hover:ring-primary transition-all duration-300 px-0 h-12 overflow-hidden",
+				"contact-button-wrapper bg-primary rounded-full text-white hover:text-primary hover:bg-background hover:ring hover:ring-primary transition-all duration-300 px-0 h-12 overflow-hidden dark:text-black",
 				className,
 			)}
 		>

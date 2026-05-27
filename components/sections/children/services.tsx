@@ -12,37 +12,37 @@ const features: Feature[] = [
 		heading: "Quality",
 		description:
 			"Built with attention to detail and best practices. Every component is thoroughly tested and follows modern React patterns for reliability and performance.",
-		icon: <GitPullRequest className="size-6" />,
+		icon: <GitPullRequest className="size-6 dark:text-black" />,
 	},
 	{
 		heading: "Experience",
 		description:
 			"Crafted with user experience in mind. Each component is designed to be intuitive, accessible, and provide smooth interactions across all devices.",
-		icon: <SquareKanban className="size-6" />,
+		icon: <SquareKanban className="size-6 dark:text-black" />,
 	},
 	{
 		heading: "Support",
 		description:
 			"Comprehensive documentation and community support. Get help when you need it with detailed guides, examples, and active community assistance.",
-		icon: <RadioTower className="size-6" />,
+		icon: <RadioTower className="size-6 dark:text-black" />,
 	},
 	{
 		heading: "Innovation",
 		description:
 			"Cutting-edge design patterns and modern web technologies. Stay ahead with the latest trends in UI/UX design and development practices.",
-		icon: <WandSparkles className="size-6" />,
+		icon: <WandSparkles className="size-6 dark:text-black" />,
 	},
 	{
 		heading: "Results",
 		description:
 			"Proven track record of successful implementations. These components have been battle-tested in real-world applications and deliver consistent results.",
-		icon: <Layers className="size-6" />,
+		icon: <Layers className="size-6 dark:text-black" />,
 	},
 	{
 		heading: "Efficiency",
 		description:
 			"Optimized for performance and developer productivity. Lightweight, fast-loading components that help you build faster without compromising on quality.",
-		icon: <BatteryCharging className="size-6" />,
+		icon: <BatteryCharging className="size-6 dark:text-black" />,
 	},
 ];
 

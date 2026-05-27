@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import { ContactButton } from "@/components/contact-button";
+import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
@@ -61,7 +62,7 @@ export default function Header() {
 					</div>
 
 					<nav className="hidden items-center lg:flex text-primary font-medium font-gambarino">
-						<ul className="items-center gap-6 flex h-full">
+						<ul className="items-center gap-2 flex h-full">
 							{links.map((link) => (
 								<li key={link.href}>
 									<Link
@@ -79,17 +80,21 @@ export default function Header() {
 						>
 							Contact
 						</ContactButton>
+						<AnimatedThemeToggler className="ml-12" duration={700} />
 					</nav>
 
 					<Sheet>
-						<SheetTrigger asChild className="lg:hidden">
-							<Button
-								className="rounded-full bg-transparent cursor-pointer p-0 group transition duration-300"
-								aria-label="Toggle menu"
-							>
-								<Menu className="stroke-primary group-hover:stroke-background size-8 transition duration-300" />
-							</Button>
-						</SheetTrigger>
+						<div className="flex items-center gap-4 text-primary">
+							<AnimatedThemeToggler className="*:size-4.5 lg:hidden" />
+							<SheetTrigger asChild className="lg:hidden">
+								<Button
+									className="rounded-full bg-transparent cursor-pointer p-0 group transition duration-300"
+									aria-label="Toggle menu"
+								>
+									<Menu className="stroke-primary size-8 transition duration-300" />
+								</Button>
+							</SheetTrigger>
+						</div>
 						<SheetContent className="px-4">
 							<SheetHeader>
 								<SheetTitle>
@@ -125,9 +130,9 @@ export default function Header() {
 											{link.label}
 										</Link>
 									</li>
-                ))}
+								))}
 							</ul>
-                  <ContactButton />
+							<ContactButton />
 						</SheetContent>
 					</Sheet>
 				</div>

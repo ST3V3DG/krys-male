@@ -2,7 +2,7 @@
 
 import { motion, type Variants } from "framer-motion";
 import type { LucideIcon } from "lucide-react";
-import { ArrowUpRight, Dribbble, Github, Linkedin, Twitter } from "lucide-react";
+import { ArrowUpRight, X } from "lucide-react";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -16,7 +16,7 @@ type SocialLink = {
 	label: string;
 	handle: string;
 	href: string;
-	icon: LucideIcon;
+	icon?: LucideIcon;
 };
 
 const highlights: Highlight[] = [
@@ -39,25 +39,13 @@ const socialLinks: SocialLink[] = [
 		label: "Twitter",
 		handle: "@caspermotions",
 		href: "https://x.com/caspermotions",
-		icon: Twitter,
+		// icon: Twitter,
 	},
 	{
 		label: "LinkedIn",
 		handle: "Casper Lightman",
 		href: "https://linkedin.com/in/casperlightman",
-		icon: Linkedin,
-	},
-	{
-		label: "Dribbble",
-		handle: "caspermotion",
-		href: "https://dribbble.com/caspermotion",
-		icon: Dribbble,
-	},
-	{
-		label: "GitHub",
-		handle: "casper-studio",
-		href: "https://github.com/casper-studio",
-		icon: Github,
+		// icon: Linkedin,
 	},
 ];
 
@@ -190,8 +178,8 @@ export function GlassmorphismPortfolioBlock() {
 									>
 										<div className="absolute left-1/2 top-1/2 size-32 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-2xl" />
 										<Image
-											src="/images/hoods.webp"
-											alt="Casper Lightman"
+											src="/images/logo.png"
+											alt="logo"
 											className="relative size-48 rounded-full border border-border/40 object-cover"
 											width={500}
 											height={500}
@@ -234,7 +222,7 @@ export function GlassmorphismPortfolioBlock() {
 									className="mt-8 flex flex-col gap-3"
 								>
 									{socialLinks.map((social) => {
-										const Icon = social.icon;
+										const Icon = social.icon ?? X;
 										return (
 											<motion.a
 												key={social.label}

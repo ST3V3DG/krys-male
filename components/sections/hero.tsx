@@ -85,9 +85,9 @@ export function HeroSection() {
 					</div>
 				</div>
 				<div className="flex gap-4">
-          {/*<SwipeableCards images={images} loop />*/}
-          <ClipPathCarousel images={images} />
-        </div>
+					{/*<SwipeableCards images={images} loop />*/}
+					<ClipPathCarousel images={images} />
+				</div>
 			</div>
 		</section>
 	);

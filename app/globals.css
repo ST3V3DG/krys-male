@@ -111,7 +111,7 @@
 }
 
 .dark {
-	--background: oklch(8.1% 0.015 21);
+	--background: oklch(0.13 0.03 336.77);
 	--foreground: oklch(0.985 0 0);
 	--card: oklch(0.205 0 0);
 	--card-foreground: oklch(0.985 0 0);
@@ -207,4 +207,10 @@ header nav a:before {
 ::selection {
 	background-color: var(--primary);
 	color: var(--background);
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+	animation: none;
+	mix-blend-mode: normal;
 }

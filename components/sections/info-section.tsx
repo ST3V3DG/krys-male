@@ -1,3 +1,4 @@
+import { Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function InfoSection({ title, items, className }: { title: string; items: string[]; className?: string }) {
@@ -9,7 +10,9 @@ export function InfoSection({ title, items, className }: { title: string; items:
 					<ul className="space-y-4">
 						{items.map((item, index) => (
 							<li key={index} className="flex items-start">
-								<span className="text-sky-500 mr-4 mt-1">&#10003;</span>
+								<span className="text-primary mr-4 mt-1">
+									<Check className="size-5 text-emerald-600" />
+								</span>
 								<span>{item}</span>
 							</li>
 						))}

@@ -1,7 +1,6 @@
-import { ArrowUp, Facebook, Instagram, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { BackToTopButton } from "@/components/back-to-top-button";
 
 export default function Footer() {
 	return (
@@ -28,7 +27,7 @@ export default function Footer() {
 							A curated magazine exploring design, culture, and thoughtful living. We showcase stories
 							that inspire and connect.
 						</p>
-						<div className="flex space-x-4">
+						{/*<div className="flex space-x-4">
 							<Link
 								href="#"
 								className="hover:text-primary text-primary transition-colors"
@@ -50,7 +49,7 @@ export default function Footer() {
 							>
 								<Facebook />
 							</Link>
-						</div>
+						</div>*/}
 					</div>
 
 					<div>
@@ -58,7 +57,7 @@ export default function Footer() {
 						<ul className="space-y-2">
 							<li>
 								<Link
-									href="#"
+									href="/"
 									className="text-muted-foreground hover:text-primary text-sm transition-colors"
 								>
 									Home
@@ -66,50 +65,18 @@ export default function Footer() {
 							</li>
 							<li>
 								<Link
-									href="#"
+									href="/premades"
 									className="text-muted-foreground hover:text-primary text-sm transition-colors"
 								>
-									Features
+									Premades
 								</Link>
 							</li>
 							<li>
 								<Link
-									href="#"
+									href="/services"
 									className="text-muted-foreground hover:text-primary text-sm transition-colors"
 								>
-									Culture
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="#"
-									className="text-muted-foreground hover:text-primary text-sm transition-colors"
-								>
-									Style
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="#"
-									className="text-muted-foreground hover:text-primary text-sm transition-colors"
-								>
-									Photography
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="#"
-									className="text-muted-foreground hover:text-primary text-sm transition-colors"
-								>
-									Travel
-								</Link>
-							</li>
-							<li>
-								<Link
-									href="#"
-									className="text-muted-foreground hover:text-primary text-sm transition-colors"
-								>
-									Archive
+									Services
 								</Link>
 							</li>
 						</ul>
@@ -120,7 +87,7 @@ export default function Footer() {
 						<ul className="space-y-2">
 							<li>
 								<Link
-									href="#"
+									href="/about"
 									className="text-muted-foreground hover:text-primary text-sm transition-colors"
 								>
 									About
@@ -128,7 +95,7 @@ export default function Footer() {
 							</li>
 							<li>
 								<Link
-									href="#"
+									href="/contact"
 									className="text-muted-foreground hover:text-primary text-sm transition-colors"
 								>
 									Contact
@@ -136,21 +103,13 @@ export default function Footer() {
 							</li>
 							<li>
 								<Link
-									href="#"
+									href="/prices"
 									className="text-muted-foreground hover:text-primary text-sm transition-colors"
 								>
-									Advertise
+									Prices
 								</Link>
 							</li>
-							<li>
-								<Link
-									href="#"
-									className="text-muted-foreground hover:text-primary text-sm transition-colors"
-								>
-									Careers
-								</Link>
-							</li>
-							<li>
+							{/*<li>
 								<Link
 									href="#"
 									className="text-muted-foreground hover:text-primary text-sm transition-colors"
@@ -173,7 +132,7 @@ export default function Footer() {
 								>
 									Cookie Policy
 								</Link>
-							</li>
+							</li>*/}
 						</ul>
 					</div>
 				</div>
@@ -184,10 +143,17 @@ export default function Footer() {
 					<p className="text-muted-foreground mb-4 text-sm md:mb-0">
 						&copy; {new Date().getFullYear()} Krysmale. All rights reserved.
 					</p>
-					<Button className="group inline-flex items-center text-sm font-medium cursor-pointer text-white rounded-full bg-primary px-4">
-						Back to top
-						<ArrowUp className="ml-1 transition duration-300 group-hover:-translate-y-1" />
-					</Button>
+					<p className="text-muted-foreground text-sm">
+						Powered by{" "}
+						<Link
+							href="https://stevethedeveloper.vercel.app"
+							target="_blank"
+							className="text-primary hover:underline"
+						>
+							Steve.D
+						</Link>
+					</p>
+					<BackToTopButton />
 				</div>
 			</div>
 		</footer>

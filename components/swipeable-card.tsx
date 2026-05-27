@@ -8,8 +8,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css";
 
-import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 export function SwipeableCards({
 	images,
@@ -63,7 +63,13 @@ export function SwipeableCards({
 			>
 				{images.map((image, index) => (
 					<SwiperSlide key={index} className="rounded-md">
-						<Image className="size-full object-cover" src={image.src} alt={image.alt} width={400} height={800} />
+						<Image
+							className="size-full object-cover"
+							src={image.src}
+							alt={image.alt}
+							width={400}
+							height={800}
+						/>
 					</SwiperSlide>
 				))}
 				{showNavigation && (

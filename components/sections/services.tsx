@@ -171,7 +171,9 @@ function ServicePresenter({ service }: { service: Service }) {
 					/>
 				</Card>
 				<div className="description-block">
-					<p className="text-balance first-letter:text-9xl/24 first-letter:float-left first-letter:text-primary">{service.description}</p>
+					<p className="text-balance first-letter:text-9xl/24 first-letter:float-left first-letter:text-primary">
+						{service.description}
+					</p>
 				</div>
 			</div>
 		</>

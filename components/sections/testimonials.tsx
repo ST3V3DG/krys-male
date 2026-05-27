@@ -63,7 +63,7 @@ export function TestimonialsSection() {
 				{/* Left Content */}
 				<div className="space-y-4 md:space-y-16">
 					<div className="space-y-4">
-						<Badge variant="outline" className="text-sm font-normal">
+						<Badge variant="outline" className="text-base font-normal">
 							Testimonials
 						</Badge>
 						<h2 className="text-2xl font-semibold text-primary sm:text-3xl lg:text-4xl">
