@@ -62,12 +62,12 @@ export default function Header() {
 					</div>
 
 					<nav className="hidden items-center lg:flex text-primary font-medium font-gambarino">
-						<ul className="items-center gap-2 flex h-full">
+						<ul className="items-center gap-6 flex h-full">
 							{links.map((link) => (
 								<li key={link.href}>
 									<Link
 										href={link.href}
-										className={`transition duration-300 px-4 size-full relative before:absolute before:-inset-2 before:w-[calc(100%+16px)] before:transition-all before:z-[-1] before:content-[''] before:rounded-full ${pathname === link.href ? "before:w-[calc(100%+16px)] before:bg-background before:border before:border-primary" : "hover:text-white hover:before:scale-100 before:bg-primary before:scale-0"}`}
+										className={`transition duration-300 px-4 size-full relative before:absolute before:-inset-2 before:w-[calc(100%+16px)] before:transition-all before:z-[-1] before:content-[''] before:rounded-full ${pathname === link.href ? "before:w-[calc(100%+16px)] before:bg-background before:border before:border-primary" : "hover:text-black hover:before:scale-100 before:bg-primary before:scale-0"}`}
 									>
 										{link.label}
 									</Link>
@@ -76,16 +76,16 @@ export default function Header() {
 						</ul>
 						<ContactButton
 							className="h-10 w-fit [&_span:not(:nth-child(2))]:hidden ml-4 px-4 [&_span]:text-base"
-							iconSize={4}
+							// iconSize={4}
 						>
 							Contact
 						</ContactButton>
-						<AnimatedThemeToggler className="ml-12" duration={700} />
+						<AnimatedThemeToggler className="text-primary ml-12" duration={700} />
 					</nav>
 
 					<Sheet>
 						<div className="flex items-center gap-4 text-primary">
-							<AnimatedThemeToggler className="*:size-4.5 lg:hidden" />
+							<AnimatedThemeToggler className="text-primary *:size-4.5 lg:hidden" />
 							<SheetTrigger asChild className="lg:hidden">
 								<Button
 									className="rounded-full bg-transparent cursor-pointer p-0 group transition duration-300"

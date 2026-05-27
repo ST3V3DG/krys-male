@@ -6,16 +6,16 @@ import { cn } from "@/lib/utils";
 export function ContactButton({
 	children,
 	className,
-	iconSize = 5,
+	// iconSize = 5,
 }: {
 	children?: React.ReactNode;
 	className?: string;
-	iconSize?: number;
+	// iconSize?: number;
 }) {
 	return (
 		<Button
 			className={cn(
-				"contact-button-wrapper bg-primary rounded-full text-white hover:text-primary hover:bg-background hover:ring hover:ring-primary transition-all duration-300 px-0 h-12 overflow-hidden dark:text-black",
+				"contact-button-wrapper bg-primary rounded-full text-white hover:text-primary hover:bg-background hover:ring hover:ring-primary transition-all duration-300 px-0 h-12 overflow-hidden dark:text-black dark:hover:text-white",
 				className,
 			)}
 		>
