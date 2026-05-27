@@ -45,7 +45,7 @@ export function ContactSection() {
 						</div>
 					</div>
 
-					<Card variant="outline" className="@xl:col-span-3 p-6 rounded-md relative dark:bg-background">
+					<Card variant="outline" className="@xl:col-span-3 p-6 rounded-lg relative dark:bg-background">
 						<form action="" className="space-y-5">
 							<div className="@md:grid-cols-2 grid gap-4">
 								<div className="space-y-2">
@@ -53,7 +53,7 @@ export function ContactSection() {
 										Name
 									</Label>
 									<Input
-										className="dark:bg-secondary/20"
+										className="rounded-full dark:bg-secondary/20"
 										type="text"
 										id="name"
 										name="name"
@@ -66,7 +66,7 @@ export function ContactSection() {
 										Email
 									</Label>
 									<Input
-										className="dark:bg-secondary/20"
+										className="rounded-full dark:bg-secondary/20"
 										type="email"
 										id="email"
 										name="email"
@@ -81,7 +81,7 @@ export function ContactSection() {
 									Subject
 								</Label>
 								<Input
-									className="dark:bg-secondary/20"
+									className="rounded-full dark:bg-secondary/20"
 									type="text"
 									id="subject"
 									name="subject"
@@ -99,7 +99,7 @@ export function ContactSection() {
 									rows={4}
 									placeholder="Tell us more..."
 									required
-									className="min-h-28 dark:bg-secondary/20"
+									className="min-h-28 rounded-lg dark:bg-secondary/20"
 								/>
 							</div>
 
