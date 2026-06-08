@@ -67,7 +67,7 @@ export default function Header() {
 								<li key={link.href}>
 									<Link
 										href={link.href}
-										className={`transition duration-300 px-4 size-full relative before:absolute before:-inset-2 before:w-[calc(100%+16px)] before:transition-all before:z-[-1] before:content-[''] before:rounded-full ${pathname === link.href ? "before:w-[calc(100%+16px)] before:bg-background before:border before:border-primary" : "hover:text-black hover:before:scale-100 before:bg-primary before:scale-0"}`}
+										className={`transition duration-300 px-4 size-full relative before:absolute before:-inset-2 before:w-[calc(100%+16px)] before:transition-all before:z-[-1] before:content-[''] before:rounded-full ${pathname === link.href ? "before:w-[calc(100%+16px)] before:bg-background before:border before:border-primary" : "hover:text-white dark:hover:text-black hover:before:scale-100 before:bg-primary before:scale-0"}`}
 									>
 										{link.label}
 									</Link>

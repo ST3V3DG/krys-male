@@ -178,8 +178,8 @@ export function GlassmorphismPortfolioBlock() {
 									>
 										<div className="absolute left-1/2 top-1/2 size-32 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-2xl" />
 										<Image
-											src="/images/logo.png"
-											alt="logo"
+											src="/images/avatar/avatar.png"
+											alt="avatar"
 											className="relative size-48 rounded-full border border-border/40 object-cover"
 											width={500}
 											height={500}
