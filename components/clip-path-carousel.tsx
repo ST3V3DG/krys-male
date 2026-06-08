@@ -14,56 +14,10 @@ export function ClipPathCarousel({
 	images,
 	className,
 }: {
-	images?: Array<{ src: string; alt: string; title: string }>;
+	images: Array<{ src: string; alt: string; title: string }>;
 	className?: string;
 }) {
-	const carouselImages = images || [
-		{
-			src: "/images/x.com/13.jpeg",
-			alt: "Illustrations by ©AarzooAly",
-			title: "Block Reader",
-		},
-		{
-			src: "/images/x.com/9.jpeg",
-			alt: "Illustrations by ©AarzooAly",
-			title: "Forest Fungi",
-		},
-		{
-			src: "/images/x.com/20.jpeg",
-			alt: "Illustrations by ©AarzooAly",
-			title: "Golden Dusk",
-		},
-		{
-			src: "/images/x.com/21.jpeg",
-			alt: "Illustrations by ©AarzooAly",
-			title: "Silent Peaks",
-		},
-		{
-			src: "/images/x.com/25.jpeg",
-			alt: "Illustrations by ©AarzooAly",
-			title: "Emerald Woods",
-		},
-		{
-			src: "/images/x.com/32.jpeg",
-			alt: "Illustrations by ©AarzooAly",
-			title: "Falling Mist",
-		},
-		{
-			src: "/images/x.com/19.jpeg",
-			alt: "Illustrations by ©AarzooAly",
-			title: "Midnight Veil",
-		},
-		{
-			src: "/images/x.com/3.jpeg",
-			alt: "Illustrations by ©AarzooAly",
-			title: "Azure Ridge",
-		},
-		{
-			src: "/images/x.com/2.jpeg",
-			alt: "Illustrations by ©AarzooAly",
-			title: "Cloud Summit",
-		},
-	];
+	const carouselImages = images;
 	return (
 		<div className={cn(`flex h-full w-screen items-center justify-center overflow-hidden`, className)}>
 			<SkiperCarousel
