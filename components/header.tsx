@@ -132,7 +132,7 @@ export default function Header() {
 									</li>
 								))}
 							</ul>
-							<ContactButton />
+							<ContactButton className="font-gambarino" />
 						</SheetContent>
 					</Sheet>
 				</div>

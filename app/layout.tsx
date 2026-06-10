@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	return (
-		<html className="scroll-smooth" lang="en" suppressHydrationWarning>
+		<html data-scroll-behavior="smooth" lang="en" suppressHydrationWarning>
 			<body className="antialiased overflow-x-hidden *:bg-background">{children}</body>
 		</html>
 	);
