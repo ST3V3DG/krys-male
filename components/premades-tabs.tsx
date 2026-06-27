@@ -1,226 +1,277 @@
 import PremadesGrid from "@/components/premades-grid";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import type { PremadesGridProps } from "./premades-grid";
 
-const tabs = [
+type TabProps = {
+  name: string;
+  value: string;
+  content: PremadesGridProps[];
+};
+
+const tabs: TabProps[] = [
 	{
-		name: "$80",
-		value: "80",
+		name: "100€-150€",
+		value: "100-150",
 		content: [
 			{
-				title: "Cardiologie",
-				description:
-					"Centre d'excellence en cardiologie offrant des soins complets pour le diagnostic et le traitement des maladies cardiaques. Technologies de pointe pour les interventions cardiaques complexes.",
-				imageSrc: "/images/80/bermuda 4.png",
-				imageAlt: "Équipement de cardiologie moderne",
+				price: "100€",
+				imageSrc: "/images/premades/100-150/100/1.png",
+				imageAlt: "premade de 100€ numéro 1",
 				priority: true,
 			},
 			{
-				title: "Urologie",
-				description:
-					"Service spécialisé dans le traitement des pathologies urologiques et la transplantation rénale, utilisant des techniques robotiques et mini-invasives de dernière génération.",
-				imageSrc: "/images/80/GRUNDGE 2.png",
-				imageAlt: "Bloc opératoire urologique",
+				price: "100€",
+				imageSrc: "/images/premades/100-150/100/2.png",
+				imageAlt: "premade de 100€ numéro 2",
 				priority: true,
 			},
 			{
-				title: "Oncologie",
-				description:
-					"Département d'oncologie et chirurgie oncologique proposant des traitements personnalisés innovants. Expertise en immunothérapie et thérapies ciblées.",
-				imageSrc: "/images/80/ROMANTASY VINTAGE.png",
-				imageAlt: "Centre de traitement oncologique",
+				price: "100€",
+				imageSrc: "/images/premades/100-150/100/3.jpg",
+				imageAlt: "premade de 100€ numéro 3",
 				priority: true,
 			},
 			{
-				title: "Chirurgie G.I.",
-				description:
-					"Service spécialisé dans la chirurgie gastro-intestinale, offrant des solutions innovantes pour les pathologies digestives complexes.",
-				imageSrc: "/images/80/Science Fiction.png",
-				imageAlt: "Équipement chirurgical G.I.",
+				price: "100€",
+				imageSrc: "/images/premades/100-150/100/4.png",
+				imageAlt: "premade de 100€ numéro 4",
 				priority: true,
 			},
 			{
-				title: "Soins intensifs",
-				description:
-					"Unité de soins intensifs ultramoderne assurant une surveillance continue et des soins critiques avec les dernières technologies médicales.",
-				imageSrc: "/images/80/sf.png",
-				imageAlt: "Unité de soins intensifs",
+				price: "100€",
+				imageSrc: "/images/premades/100-150/100/5.png",
+				imageAlt: "premade de 100€ numéro 5",
 				priority: true,
 			},
 			{
-				title: "Chirurgie bariatrique",
-				description:
-					"Centre spécialisé dans le traitement chirurgical de l'obésité, proposant une approche multidisciplinaire complète.",
-				imageSrc: "/images/80/SHOW3.png",
-				imageAlt: "Bloc opératoire bariatrique",
+				price: "100€",
+				imageSrc: "/images/premades/100-150/100/6.png",
+				imageAlt: "premade de 100€ numéro 6",
+				priority: true,
+			},
+			{
+				price: "100€",
+				imageSrc: "/images/premades/100-150/100/7.png",
+				imageAlt: "premade de 100€ numéro 7",
+				priority: true,
+			},
+			{
+				price: "100€",
+				imageSrc: "/images/premades/100-150/100/8.png",
+				imageAlt: "premade de 100€ numéro 8",
+				priority: true,
+			},
+			{
+				price: "120€",
+				imageSrc: "/images/premades/100-150/120/1.png",
+				imageAlt: "premade de 120€ numéro 1",
+				priority: true,
+			},
+			{
+				price: "120€",
+				imageSrc: "/images/premades/100-150/120/2.png",
+				imageAlt: "premade de 120€ numéro 2",
+				priority: true,
+			},
+			{
+				price: "120€",
+				imageSrc: "/images/premades/100-150/120/3.png",
+				imageAlt: "premade de 120€ numéro 3",
+				priority: true,
+			},
+			{
+				price: "120€",
+				imageSrc: "/images/premades/100-150/120/4.png",
+				imageAlt: "premade de 120€ numéro 4",
+				priority: true,
+			},
+			{
+				price: "120€",
+				imageSrc: "/images/premades/100-150/120/5.png",
+				imageAlt: "premade de 120€ numéro 5",
+				priority: true,
+			},
+			{
+				price: "120€",
+				imageSrc: "/images/premades/100-150/120/6.png",
+				imageAlt: "premade de 120€ numéro 6",
+				priority: true,
+			},
+			{
+				price: "120€",
+				imageSrc: "/images/premades/100-150/120/7.png",
+				imageAlt: "premade de 120€ numéro 7",
+				priority: true,
+			},
+			{
+				price: "120€",
+				imageSrc: "/images/premades/100-150/120/8.png",
+				imageAlt: "premade de 120€ numéro 8",
+				priority: true,
+			},
+			{
+				price: "150€",
+				imageSrc: "/images/premades/100-150/150/1.png",
+				imageAlt: "premade de 150€ numéro 1",
+				priority: true,
+			},
+			{
+				price: "150€",
+				imageSrc: "/images/premades/100-150/150/2.png",
+				imageAlt: "premade de 150€ numéro 2",
+				priority: true,
+			},
+			{
+				price: "150€",
+				imageSrc: "/images/premades/100-150/150/3.png",
+				imageAlt: "premade de 150€ numéro 3",
+				priority: true,
+			},
+			{
+				price: "150€",
+				imageSrc: "/images/premades/100-150/150/4.png",
+				imageAlt: "premade de 150€ numéro 4",
+				priority: true,
+			},
+			{
+				price: "150€",
+				imageSrc: "/images/premades/100-150/150/5.png",
+				imageAlt: "premade de 150€ numéro 5",
+				priority: true,
+			},
+			{
+				price: "150€",
+				imageSrc: "/images/premades/100-150/150/6.png",
+				imageAlt: "premade de 150€ numéro 6",
 				priority: true,
 			},
 		],
-	},
-	{
-		name: "$100",
-		value: "100",
-		content: [
-			{
-				title: "Urologie",
-				description:
-					"Service spécialisé dans le traitement des pathologies urologiques et la transplantation rénale, utilisant des techniques robotiques et mini-invasives de dernière génération.",
-				imageSrc: "/images/100/C.png",
-				imageAlt: "Bloc opératoire urologique",
-				priority: true,
-			},
-			{
-				title: "Oncologie",
-				description:
-					"Département d'oncologie et chirurgie oncologique proposant des traitements personnalisés innovants. Expertise en immunothérapie et thérapies ciblées.",
-				imageSrc: "/images/100/fui.png",
-				imageAlt: "Centre de traitement oncologique",
-				priority: true,
-			},
-			{
-				title: "Chirurgie G.I.",
-				description:
-					"Service spécialisé dans la chirurgie gastro-intestinale, offrant des solutions innovantes pour les pathologies digestives complexes.",
-				imageSrc: "/images/100/FANTY.png",
-				imageAlt: "Équipement chirurgical G.I.",
-				priority: true,
-			},
-		],
-	},
-	{
-		name: "$120",
-		value: "120",
-		content: [
-			{
-				title: "Cardiologie",
-				description:
-					"Centre d'excellence en cardiologie offrant des soins complets pour le diagnostic et le traitement des maladies cardiaques. Technologies de pointe pour les interventions cardiaques complexes.",
-				imageSrc: "/images/120/hf3.png",
-				imageAlt: "Équipement de cardiologie moderne",
-				priority: true,
-			},
-			{
-				title: "Urologie",
-				description:
-					"Service spécialisé dans le traitement des pathologies urologiques et la transplantation rénale, utilisant des techniques robotiques et mini-invasives de dernière génération.",
-				imageSrc: "/images/120/Western Love 2.png",
-				imageAlt: "Bloc opératoire urologique",
-				priority: true,
-			},
-		],
-	},
-	{
-		name: "$150",
-		value: "150",
-		content: [
-			{
-				title: "Cardiologie",
-				description:
-					"Centre d'excellence en cardiologie offrant des soins complets pour le diagnostic et le traitement des maladies cardiaques. Technologies de pointe pour les interventions cardiaques complexes.",
-				imageSrc: "/images/150/INKTOBER.png",
-				imageAlt: "Équipement de cardiologie moderne",
-				priority: true,
-			},
-			{
-				title: "Urologie",
-				description:
-					"Service spécialisé dans le traitement des pathologies urologiques et la transplantation rénale, utilisant des techniques robotiques et mini-invasives de dernière génération.",
-				imageSrc: "/images/150/llpp.jpg",
-				imageAlt: "Bloc opératoire urologique",
-				priority: true,
-			},
-			{
-				title: "Urologie",
-				description:
-					"Service spécialisé dans le traitement des pathologies urologiques et la transplantation rénale, utilisant des techniques robotiques et mini-invasives de dernière génération.",
-				imageSrc: "/images/150/SPOOKY1.png",
-				imageAlt: "Bloc opératoire urologique",
-				priority: true,
-			},
-			{
-				title: "Urologie",
-				description:
-					"Service spécialisé dans le traitement des pathologies urologiques et la transplantation rénale, utilisant des techniques robotiques et mini-invasives de dernière génération.",
-				imageSrc: "/images/150/ORLEANS IN LOVE.png",
-				imageAlt: "Bloc opératoire urologique",
-				priority: true,
-			},
-			{
-				title: "Urologie",
-				description:
-					"Service spécialisé dans le traitement des pathologies urologiques et la transplantation rénale, utilisant des techniques robotiques et mini-invasives de dernière génération.",
-				imageSrc: "/images/150/ROMANTASY 2.png",
-				imageAlt: "Bloc opératoire urologique",
-				priority: true,
-			},
-		],
-	},
-	{
-		name: "$200",
-		value: "200",
-		content: [
-			{
-				title: "Cardiologie",
-				description:
-					"Centre d'excellence en cardiologie offrant des soins complets pour le diagnostic et le traitement des maladies cardiaques. Technologies de pointe pour les interventions cardiaques complexes.",
-				imageSrc: "/images/200/ko2.png",
-				imageAlt: "Équipement de cardiologie moderne",
-				priority: true,
-			},
-			{
-				title: "Urologie",
-				description:
-					"Service spécialisé dans le traitement des pathologies urologiques et la transplantation rénale, utilisant des techniques robotiques et mini-invasives de dernière génération.",
-				imageSrc: "/images/200/JY.png",
-				imageAlt: "Bloc opératoire urologique",
-				priority: true,
-			},
-			{
-				title: "Urologie",
-				description:
-					"Service spécialisé dans le traitement des pathologies urologiques et la transplantation rénale, utilisant des techniques robotiques et mini-invasives de dernière génération.",
-				imageSrc: "/images/200/hhh.png",
-				imageAlt: "Bloc opératoire urologique",
-				priority: true,
-			},
-			{
-				title: "Urologie",
-				description:
-					"Service spécialisé dans le traitement des pathologies urologiques et la transplantation rénale, utilisant des techniques robotiques et mini-invasives de dernière génération.",
-				imageSrc: "/images/200/Dark Romance.png",
-				imageAlt: "Bloc opératoire urologique",
-				priority: true,
-			},
-			{
-				title: "Urologie",
-				description:
-					"Service spécialisé dans le traitement des pathologies urologiques et la transplantation rénale, utilisant des techniques robotiques et mini-invasives de dernière génération.",
-				imageSrc: "/images/200/SPORT ROMANCE.png",
-				imageAlt: "Bloc opératoire urologique",
-				priority: true,
-			},
-			{
-				title: "Urologie",
-				description:
-					"Service spécialisé dans le traitement des pathologies urologiques et la transplantation rénale, utilisant des techniques robotiques et mini-invasives de dernière génération.",
-				imageSrc: "/images/200/star.webp",
-				imageAlt: "Bloc opératoire urologique",
-				priority: true,
-			},
-			{
-				title: "Urologie",
-				description:
-					"Service spécialisé dans le traitement des pathologies urologiques et la transplantation rénale, utilisant des techniques robotiques et mini-invasives de dernière génération.",
-				imageSrc: "/images/200/Art Nouveau.png",
-				imageAlt: "Bloc opératoire urologique",
-				priority: true,
-			},
-		],
-	},
+  },
+  {
+    name: "175€-200€",
+    value: "175-200",
+    content: [
+      {
+				price: "175€",
+				imageSrc: "/images/premades/175-200/175/1.png",
+				imageAlt: "premade de 175€ numéro 1",
+				priority: false,
+      },
+      {
+				price: "175€",
+				imageSrc: "/images/premades/175-200/175/2.png",
+				imageAlt: "premade de 175€ numéro 2",
+				priority: false,
+      },
+      {
+				price: "175€",
+				imageSrc: "/images/premades/175-200/175/3.png",
+				imageAlt: "premade de 175€ numéro 3",
+				priority: false,
+      },
+      {
+				price: "175€",
+				imageSrc: "/images/premades/175-200/175/4.png",
+				imageAlt: "premade de 175€ numéro 4",
+				priority: false,
+      },
+      {
+				price: "175€",
+				imageSrc: "/images/premades/175-200/175/5.png",
+				imageAlt: "premade de 175€ numéro 5",
+				priority: false,
+      },
+      {
+				price: "175€",
+				imageSrc: "/images/premades/175-200/175/6.png",
+				imageAlt: "premade de 175€ numéro 6",
+				priority: false,
+      },
+      {
+				price: "175€",
+				imageSrc: "/images/premades/175-200/175/7.png",
+				imageAlt: "premade de 175€ numéro 7",
+				priority: false,
+      },
+      {
+				price: "200€",
+				imageSrc: "/images/premades/175-200/200/1.png",
+				imageAlt: "premade de 200€ numéro 1",
+				priority: false,
+      },
+      {
+				price: "200€",
+				imageSrc: "/images/premades/175-200/200/2.png",
+				imageAlt: "premade de 200€ numéro 2",
+				priority: false,
+      },
+      {
+				price: "200€",
+				imageSrc: "/images/premades/175-200/200/3.png",
+				imageAlt: "premade de 200€ numéro 3",
+				priority: false,
+      },
+      {
+				price: "200€",
+				imageSrc: "/images/premades/175-200/200/4.png",
+				imageAlt: "premade de 200€ numéro 4",
+				priority: false,
+      },
+      {
+				price: "200€",
+				imageSrc: "/images/premades/175-200/200/5.png",
+				imageAlt: "premade de 200€ numéro 5",
+				priority: false,
+      },
+      {
+				price: "200€",
+				imageSrc: "/images/premades/175-200/200/6.png",
+				imageAlt: "premade de 200€ numéro 6",
+				priority: false,
+      },
+      {
+				price: "200€",
+				imageSrc: "/images/premades/175-200/200/7.png",
+				imageAlt: "premade de 200€ numéro 7",
+				priority: false,
+      },
+      {
+				price: "200€",
+				imageSrc: "/images/premades/175-200/200/8.png",
+				imageAlt: "premade de 200€ numéro 8",
+				priority: false,
+      },
+      {
+				price: "200€",
+				imageSrc: "/images/premades/175-200/200/9.png",
+				imageAlt: "premade de 200€ numéro 9",
+				priority: false,
+      },
+      {
+				price: "200€",
+				imageSrc: "/images/premades/175-200/200/10.png",
+				imageAlt: "premade de 200€ numéro 10",
+				priority: false,
+      },
+      {
+				price: "200€",
+				imageSrc: "/images/premades/175-200/200/11.png",
+				imageAlt: "premade de 200€ numéro 11",
+				priority: false,
+      },
+      {
+				price: "200€",
+				imageSrc: "/images/premades/175-200/200/12.png",
+				imageAlt: "premade de 200€ numéro 12",
+				priority: false,
+      },
+    ],
+	}
 ];
 
 export function PremadesTabs() {
 	return (
-		<Tabs defaultValue="80" className="gap-4">
+		<Tabs defaultValue="100-150" className="gap-4">
 			<TabsList className="bg-background rounded-none border-b p-0 w-full">
 				{tabs.map((tab) => (
 					<TabsTrigger
@@ -235,9 +286,7 @@ export function PremadesTabs() {
 
 			{tabs.map((tab) => (
 				<TabsContent key={tab.value} value={tab.value}>
-					<div className="lg:columns-4 max-w-lg:flex justify-between max-w-lg:flex-col gap-4">
-						<PremadesGrid premades={tab.content} />
-					</div>
+					<PremadesGrid premades={tab.content} />
 				</TabsContent>
 			))}
 		</Tabs>

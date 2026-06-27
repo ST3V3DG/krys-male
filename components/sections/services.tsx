@@ -25,7 +25,7 @@ const services: Service[] = [
 	},
 	{
 		title: "Book Cover Design",
-		image: "/images/services/book-cover-design.png",
+		image: "/images/services/book-cover-design.svg",
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.",
 	},
@@ -37,7 +37,7 @@ const services: Service[] = [
 	},
 	{
 		title: "Interior Design",
-		image: "/images/services/interior-design.png",
+		image: "/images/services/interior-design.svg",
 		description:
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.",
 	},
