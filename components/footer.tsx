@@ -24,8 +24,8 @@ export default function Footer() {
 							</Link>
 						</div>
 						<p className="text-muted-foreground mb-6 max-w-md">
-							A curated magazine exploring design, culture, and thoughtful living. We showcase stories
-							that inspire and connect.
+							Hand-drawn book covers and illustrations for authors and publishers. No AI, just original
+							art made for your story.
 						</p>
 						{/*<div className="flex space-x-4">
 							<Link

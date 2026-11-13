@@ -6,42 +6,42 @@ type Feature = {
 	icon: React.ReactNode;
 };
 
-const title = "Services Offerts";
+const title = "What I offer for children's books";
 const features: Feature[] = [
 	{
-		heading: "Quality",
+		heading: "Full book illustration",
 		description:
-			"Built with attention to detail and best practices. Every component is thoroughly tested and follows modern React patterns for reliability and performance.",
+			"Picture books, board books, and chapter books illustrated cover to cover, with sketches, color, and final files.",
 		icon: <GitPullRequest className="size-6 dark:text-black" />,
 	},
 	{
-		heading: "Experience",
+		heading: "Character design",
 		description:
-			"Crafted with user experience in mind. Each component is designed to be intuitive, accessible, and provide smooth interactions across all devices.",
+			"Character sheets with front, side, and back views, ready to reuse across pages and marketing.",
 		icon: <SquareKanban className="size-6 dark:text-black" />,
 	},
 	{
-		heading: "Support",
+		heading: "Book covers",
 		description:
-			"Comprehensive documentation and community support. Get help when you need it with detailed guides, examples, and active community assistance.",
+			"Front cover, spine, and back cover, with wraparound option for print.",
 		icon: <RadioTower className="size-6 dark:text-black" />,
 	},
 	{
-		heading: "Innovation",
+		heading: "Interior illustrations",
 		description:
-			"Cutting-edge design patterns and modern web technologies. Stay ahead with the latest trends in UI/UX design and development practices.",
+			"Spot illustrations, half-page, and full-page color art for interiors.",
 		icon: <WandSparkles className="size-6 dark:text-black" />,
 	},
 	{
-		heading: "Results",
+		heading: "Rush delivery",
 		description:
-			"Proven track record of successful implementations. These components have been battle-tested in real-world applications and deliver consistent results.",
+			"Expedited turnaround for tight deadlines, available on request.",
 		icon: <Layers className="size-6 dark:text-black" />,
 	},
 	{
-		heading: "Efficiency",
+		heading: "Usage rights",
 		description:
-			"Optimized for performance and developer productivity. Lightweight, fast-loading components that help you build faster without compromising on quality.",
+			"Print publication rights included; extended rights available as add-ons.",
 		icon: <BatteryCharging className="size-6 dark:text-black" />,
 	},
 ];

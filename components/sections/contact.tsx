@@ -15,8 +15,8 @@ export function ContactSection() {
 						Get in Touch
 					</h1>
 					<p className="text-muted-foreground mt-4 max-w-md text-balance">
-						Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as
-						possible.
+						Tell me about your book, your timeline, and the kind of cover you're after. I'll reply within
+						two business days.
 					</p>
 				</div>
 
@@ -25,10 +25,10 @@ export function ContactSection() {
 						<div>
 							<p className="text-foreground text-sm font-medium">Email</p>
 							<Link
-								href="mailto:hello@example.com"
+								href="mailto:hello@krysmale.com"
 								className="text-muted-foreground hover:text-primary text-sm"
 							>
-								hello@example.com
+								hello@krysmale.com
 							</Link>
 						</div>
 
@@ -41,7 +41,7 @@ export function ContactSection() {
 
 						<div>
 							<p className="text-foreground text-sm font-medium">Office</p>
-							<p className="text-muted-foreground text-sm">123 Main Street, San Francisco, CA 94102</p>
+							<p className="text-muted-foreground text-sm">Remote · working with clients worldwide</p>
 						</div>
 					</div>
 

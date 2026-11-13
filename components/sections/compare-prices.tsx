@@ -81,8 +81,10 @@ export function ComparePricesSection({
 		<section className={cn("py-8 lg:py-32", className)}>
 			<div className="max-w-6xl mx-auto px-6">
 				<div className="mb-8 text-center">
-					<h1 className="text-5xl font-bold text-primary">Compare Products</h1>
-					<p className="mt-8 text-muted-foreground">See how our products stack up against each other</p>
+					<h1 className="text-5xl font-bold text-primary">Compare tiers</h1>
+					<p className="mt-8 text-muted-foreground">
+						See what's included in each tier before you request a quote
+					</p>
 				</div>
 
 				<div className="overflow-x-auto mt-16">
@@ -129,7 +131,7 @@ export function ComparePricesSection({
 												<span className="text-sm">{product.rating}</span>
 											</div>
 											<Button className="mt-4 w-full rounded-full bg-primary" size="sm">
-												Add to Cart
+												Request a quote
 											</Button>
 										</div>
 									</TableHead>

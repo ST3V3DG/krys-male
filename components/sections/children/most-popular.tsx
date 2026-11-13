@@ -13,7 +13,7 @@ const slideData = [
 		category: "Design",
 		title: "The Architecture of Light",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel risus sed metus faucibus auctor. Nulla facilisi. Vestibulum vel tortor at quam elementum consequat.",
+			"Placeholder description. Replace with a real article summary.",
 		author: "Alex Honnold",
 	},
 	{

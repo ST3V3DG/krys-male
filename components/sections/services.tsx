@@ -21,25 +21,25 @@ const services: Service[] = [
 		title: "Editorial Illustration",
 		image: "/images/services/editorial-illustration.png",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.",
+			"Illustrations for magazines, articles, and editorial features. From spot illustrations to full-page scenes, each piece is drawn to support the story it accompanies.",
 	},
 	{
 		title: "Book Cover Design",
 		image: "/images/services/book-cover-design.svg",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.",
+			"Full cover design for print and ebook: character art, typography, and layout, tailored to your genre and readership. Wraparound and spine included on request.",
 	},
 	{
-		title: "Character design",
+		title: "Character Design",
 		image: "/images/services/character-design.png",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.",
+			"Character sheets with multiple angles and expressions, ready to reuse across covers, interiors, and promotional material.",
 	},
 	{
-		title: "Interior Design",
-		image: "/images/services/interior-design.svg",
+		title: "Interior Illustration",
+		image: "/images/services/interior-design.png",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.",
+			"Interior illustrations for your book: chapter headers, spot art, and full-page scenes that carry your story past the cover.",
 	},
 ];
 
@@ -49,10 +49,10 @@ export function ServicesSection() {
 			<div className="max-w-6xl mx-auto px-6 grid grid-cols-1 gap-10 lg:grid-cols-3">
 				<div className="flex flex-col justify-between lg:col-span-1">
 					<div>
-						<h1 className="mb-4 text-4xl font-medium text-primary md:text-6xl">Featured Services</h1>
+						<h1 className="mb-4 text-4xl font-medium text-primary md:text-6xl">Services</h1>
 						<p className="w-72 text-base tracking-tight text-muted-foreground">
-							We offer comprehensive digital solutions to help your business grow. From web development to
-							mobile apps, we deliver quality results that exceed expectations.
+							I illustrate book covers and interiors for authors and publishers. Pick the service that
+							fits your project, or combine several.
 						</p>
 					</div>
 				</div>

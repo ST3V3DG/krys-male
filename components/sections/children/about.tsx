@@ -2,13 +2,13 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-const title = "All you have to know about me";
+const title = "Illustrations for children's books";
 
 const paragraph1 =
-	"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisquam, quia, sit minus, quod debitis autem quia aspernatur delectus impedit modi, neque non id ad dignissimos? Saepe deleniti perferendis beatae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisquam, quia, sit minus, quod debitis autem quia aspernatur delectus impedit modi, neque non id ad dignissimos? Saepe deleniti perferendis beatae.";
+	"I illustrate children's books from cover to last page: picture books, board books, chapter books, and middle-grade novels. Every character and scene is drawn by hand, with no AI, and shaped around your story and your readers' age group.";
 
 const paragraph2 =
-	"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisquam, quia, sit minus, quod debitis autem quia aspernatur delectus impedit modi, neque non id ad dignissimos? Saepe deleniti perferendis beatae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisquam, quia, sit minus, quod debitis autem quia aspernatur delectus impedit modi, neque non id ad dignissimos? Saepe deleniti perferendis beatae.";
+	"I've been working in this industry since 2017. Whether you need a full book or a single illustration, I'll guide you through sketches, color, and final files so the result feels right for young readers.";
 
 export function AboutSection() {
 	return (

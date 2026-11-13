@@ -7,6 +7,7 @@ import Header from "@/components/header";
 import { AboutSection } from "@/components/sections/children/about";
 import { HeroSection } from "@/components/sections/children/hero";
 import { ServicesSection } from "@/components/sections/children/services";
+import { ChildrenPricingSection } from "@/components/sections/children/pricing";
 import { FaqsSection } from "@/components/sections/faqs";
 import { ProcessSection } from "@/components/sections/process";
 
@@ -21,6 +22,7 @@ export default function ChildrenHome() {
 					<HeroSection />
 					<AboutSection />
 					<ServicesSection />
+					<ChildrenPricingSection />
 					<ProcessSection />
 					<FaqsSection />
 				</main>

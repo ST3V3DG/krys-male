@@ -26,7 +26,7 @@ const items: FaqItem[] = [
 
 const title = "Frequently asked questions";
 const description =
-	"Find answers to common questions about our products. Can't find what you're looking for? Contact me for more information.";
+	"Answers to common questions about working with me. Can't find what you're looking for? Send a message and I'll reply.";
 
 export function FaqsSection() {
 	return (

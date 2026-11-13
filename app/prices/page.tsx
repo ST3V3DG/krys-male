@@ -77,10 +77,10 @@ const servicesPackagesSpecsGroups: SpecsGroupsType = [
 ];
 
 const packageInclusions = [
-	"Source files upon full payment (+50% )",
+	"Source files on full payment (+50% of the fee)",
 	"Usage rights for book publication and standard marketing",
 	"300 DPI high-resolution files",
-	"Multiple file formats (JPG, PNG, PDF) (more fomats 25$ each )",
+	"Multiple file formats (JPG, PNG, PDF); additional formats $25 each",
 ];
 
 const importantNotes = [

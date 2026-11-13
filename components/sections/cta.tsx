@@ -35,13 +35,12 @@ export function CTASection() {
 							<Card className="bg-secondary/10 rounded-lg border-0 shadow-none">
 								<CardContent className="flex h-full flex-col justify-between gap-4">
 									<h2 className="text-xl leading-tight font-semibold text-primary lg:text-2xl">
-										Explore insights, stories, and strategies that help you build better products
-										every day.
+										Ready to start your cover?
 									</h2>
 									<div>
 										<p className="text-muted-foreground mb-3 text-base">
-											Join 1,000,000+ subscribers receiving expert tips on earning more, investing
-											smarter and living better, all in our free newsletter.
+											Tell me about your book and the timeline you have in mind. I'll reply within
+											two business days.
 										</p>
 										{/* Email Form */}
 										<form className="gap-3 max-sm:space-y-2 sm:flex sm:flex-row bg-background rounded-full p-2">
@@ -57,7 +56,7 @@ export function CTASection() {
 												className="rounded-full bg-primary text-base max-sm:w-full"
 												type="submit"
 											>
-												Subscribe
+												Request a quote
 											</Button>
 										</form>
 									</div>

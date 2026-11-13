@@ -1,7 +1,8 @@
 import { PremadesTabs } from "@/components/premades-tabs";
 
-const heading = "Des spécialités diverses et variées";
-const description = "Nous vous mettons entre les mains d'experts en tout genre.";
+const heading = "Ready-made covers";
+const description =
+	"Pre-designed covers you can buy as-is or customize. Pick a price tier below and ask me to adapt the title, palette, or characters.";
 
 export function PremadesSection() {
 	return (

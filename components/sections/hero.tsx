@@ -18,11 +18,12 @@ export function HeroSection() {
 			<div className="mx-auto max-w-6xl px-6 flex flex-col gap-16 size-full relative items-center justify-center">
 				<div className="flex flex-col items-center justify-center gap-4">
 					<h1 className="text-7xl text-balance md:text-7xl max-w-2xl lg:text-center text-primary">
-						Give live to your history
+						Book covers and illustrations, drawn by hand
 					</h1>
 					<p className="text-muted-foreground max-w-md text-pretty lg:text-center">
-						Make your readers feel like they are part of your story. I'm a talented writer and I'm
-						passionate about bringing your stories to life.
+						I'm Krys-Male, an illustrator who designs book covers and interior illustrations for
+						authors and publishers. Every line and color is made by hand, no AI, and shaped around
+						your story.
 					</p>
 					<div className="flex gap-4 w-full justify-center items-center mt-6">
 						<Button size="lg" variant="outline" className="ring-primary px-10 bg-background">

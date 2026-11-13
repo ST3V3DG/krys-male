@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const title = "My Process";
 
 const description =
-	"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime amet dolorem eum est voluptatem id repellendus ut laborum laboriosam debitis.";
+	"Six steps from first conversation to final files. You're involved at every stage, and nothing moves forward without your approval.";
 
 const buttonText = "Get in touch";
 

@@ -21,31 +21,29 @@ type SocialLink = {
 
 const highlights: Highlight[] = [
 	{
-		title: "Collaborations",
-		description: "Linear, Framer, Gamma, Clearbit, and early-stage founders crafting premium launches.",
+		title: "Clients",
+		description: "Authors and publishers across genres, from debut novels to series.",
 	},
 	{
-		title: "Latest drop",
-		description: "Aurora OS motion system · 47 reusable blueprints, adaptive tokens, and launch storyboard.",
+		title: "Latest cover",
+		description: "Hand-drawn cover art with full typography and print-ready files.",
 	},
 	{
 		title: "Availability",
-		description: "2 advisory spots for Q1 · Remote friendly across EU & US time zones.",
+		description: "Booking 2+ months ahead earns a 10% early-booking discount.",
 	},
 ];
 
 const socialLinks: SocialLink[] = [
 	{
-		label: "Twitter",
-		handle: "@caspermotions",
-		href: "https://x.com/caspermotions",
-		// icon: Twitter,
+		label: "Instagram",
+		handle: "@krysmale",
+		href: "#",
 	},
 	{
-		label: "LinkedIn",
-		handle: "Casper Lightman",
-		href: "https://linkedin.com/in/casperlightman",
-		// icon: Linkedin,
+		label: "Email",
+		handle: "hello@krysmale.com",
+		href: "mailto:hello@krysmale.com",
 	},
 ];
 
@@ -93,7 +91,7 @@ export function GlassmorphismPortfolioBlock() {
 								variant="outline"
 								className="inline-flex items-center gap-2 rounded-full bg-background/55 px-4 py-1.5 text-xs uppercase tracking-[0.3em] text-secondary backdrop-blur transition-colors hover:bg-background"
 							>
-								Portfolio Insight
+								About
 							</Badge>
 
 							<div className="space-y-4">
@@ -104,7 +102,7 @@ export function GlassmorphismPortfolioBlock() {
 									transition={{ duration: 0.5, delay: 0.1 }}
 									className="text-2xl font-semibold tracking-tight text-primary md:text-3xl"
 								>
-									Casper Lightman, Product Designer & Motion Director
+									Krys-Male, Book Cover Artist & Illustrator
 								</motion.h2>
 								<motion.p
 									initial={{ opacity: 0, y: 20 }}
@@ -113,9 +111,9 @@ export function GlassmorphismPortfolioBlock() {
 									transition={{ duration: 0.5, delay: 0.2 }}
 									className="max-w-xl text-base leading-relaxed text-foreground/70 md:text-md"
 								>
-									Principal product designer pairing narrative motion with premium SaaS brands. Casper
-									leads founders and product teams through expressive design systems that convert
-									curiosity into momentum.
+									Illustrator working with authors and publishers since 2017. Every cover and
+									illustration is drawn by hand with Procreate, Photoshop, and Illustrator, no AI,
+									and shaped around your story.
 								</motion.p>
 							</div>
 
@@ -157,7 +155,7 @@ export function GlassmorphismPortfolioBlock() {
 									onClick={() => window.open("#", "_blank")}
 									className="h-12 w-full gap-2 rounded-full px-8 text-sm uppercase tracking-[0.25em] transition-all duration-300 hover:shadow sm:w-auto bg-primary hover:bg-background hover:text-primary hover:ring-1 hover:ring-primary"
 								>
-									View case studies
+									View portfolio
 									<ArrowUpRight className="size-4" />
 								</Button>
 							</motion.div>
@@ -208,8 +206,8 @@ export function GlassmorphismPortfolioBlock() {
 										transition={{ duration: 0.5, delay: 0.3 }}
 										className="mt-4 max-w-sm text-sm leading-relaxed text-foreground/70"
 									>
-										Partnering with future-facing teams to choreograph interfaces that feel
-										cinematic yet effortless.
+										Hand-drawn covers, characters, and interiors for books that deserve original
+										art.
 									</motion.p>
 								</div>
 

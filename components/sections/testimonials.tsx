@@ -19,7 +19,7 @@ export const testimonials: TestimonialItem[] = [
 		avatar: "/images/avatars/john-doe.png",
 		rating: 4.5,
 		content:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed ultrices enim. Mauris ut erat non nulla ultrices aliquam. Sed ut semper nisi, nec accumsan nisl. Donec vitae lacinia nisi. Nullam eget nisl in turpis feugiat aliquam.",
+			"Placeholder testimonial. Replace with a real client quote.",
 	},
 	{
 		name: "Jane Doe",
@@ -28,7 +28,7 @@ export const testimonials: TestimonialItem[] = [
 		avatar: "/images/avatars/jane-doe.png",
 		rating: 4.5,
 		content:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed ultrices enim. Mauris ut erat non nulla ultrices aliquam. Sed ut semper nisi, nec accumsan nisl. Donec vitae lacinia nisi. Nullam eget nisl in turpis feugiat aliquam.",
+			"Placeholder testimonial. Replace with a real client quote.",
 	},
 	{
 		name: "Bob Smith",
@@ -37,7 +37,7 @@ export const testimonials: TestimonialItem[] = [
 		avatar: "/images/avatars/bob-smith.png",
 		rating: 4.5,
 		content:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed ultrices enim. Mauris ut erat non nulla ultrices aliquam. Sed ut semper nisi, nec accumsan nisl. Donec vitae lacinia nisi. Nullam eget nisl in turpis feugiat aliquam.",
+			"Placeholder testimonial. Replace with a real client quote.",
 	},
 	{
 		name: "Alice Lee",
@@ -46,7 +46,7 @@ export const testimonials: TestimonialItem[] = [
 		avatar: "/images/avatars/alice-lee.png",
 		rating: 4.5,
 		content:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed ultrices enim. Mauris ut erat non nulla ultrices aliquam. Sed ut semper nisi, nec accumsan nisl. Donec vitae lacinia nisi. Nullam eget nisl in turpis feugiat aliquam.",
+			"Placeholder testimonial. Replace with a real client quote.",
 	},
 ];
 
@@ -67,10 +67,10 @@ export function TestimonialsSection() {
 							Testimonials
 						</Badge>
 						<h2 className="text-2xl font-semibold text-primary sm:text-3xl lg:text-4xl">
-							Trusted by leaders from various industries
+							Kind words from clients
 						</h2>
 						<p className="text-muted-foreground text-xl">
-							From career changes to dream jobs, here&apos;s how Shadcn Studio helped.
+							Real quotes will go here once collected.
 						</p>
 					</div>
 

@@ -9,7 +9,7 @@ import { CTASection } from "@/components/sections/cta";
 import { FaqsSection } from "@/components/sections/faqs";
 import { HeroSection } from "@/components/sections/hero";
 import { ProcessSection } from "@/components/sections/process";
-import { TestimonialsSection } from "@/components/sections/testimonials";
+
 
 export default function Home() {
 	const lenisRef = useRef<LenisRef>(null);
@@ -23,7 +23,6 @@ export default function Home() {
 					<AboutSection />
 					{/*<ProjectsSection />*/}
 					<ProcessSection />
-					<TestimonialsSection />
 					<CTASection />
 					<FaqsSection />
 				</main>
